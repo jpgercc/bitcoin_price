@@ -1,5 +1,5 @@
 <h2> What it do: </h2>
-<p> Check the price of Bitcoin and if the price is below 300 thousand BRL send an email to the recipient. </p>
+<p> Check the price of Bitcoin and if the price is below 300 thousand <b>BRL</b> send an email to the recipient. </p>
 
 Libraries/APIs installation via pip:
 ```
