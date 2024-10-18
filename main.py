@@ -12,7 +12,7 @@ email_destino = 'RECIPIENTEMAILADDRESS@PROVIDER.com'
 def enviar_email(preco):
     subject = 'Alerta: Preço do Bitcoin'
     body = f'O preço do Bitcoin caiu para {preco} BRL, abaixo de 300 mil BRL!'
-
+    
     # Cria email
     msg = MIMEMultipart()
     msg['From'] = email_user
@@ -23,8 +23,8 @@ def enviar_email(preco):
     try:
         with smtplib.SMTP(smtp_server, smtp_port) as server:
             server.starttls()
-            server.login(email_user, email_password)  # Login no servidor
-            server.send_message(msg)  # Envia o e-mail
+            server.login(email_user, email_password) 
+            server.send_message(msg) 
         print('E-mail enviado com sucesso!')
     except Exception as e:
         print(f'Erro ao enviar e-mail: {e}')
